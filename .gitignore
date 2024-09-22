@@ -118,5 +118,7 @@ media/
 # !**/migrations/__init__.py
 /encar_additional/
 !/airflow.env
-!/generate_data.py
+Common/generate_data.py
 *.csv
+!/Common/generate_data.py
+!/Common/
