@@ -1,6 +1,5 @@
 import os.path
 from datetime import datetime
-from datetime import timedelta
 import sys
 from os.path import dirname, realpath
 
@@ -9,7 +8,7 @@ from airflow.decorators import dag, task
 begin_path = dirname(dirname(realpath(__file__)))
 sys.path.append(begin_path)
 
-from dags.utils.users_crud_parser import calculate_daily_aggregates, calculate_weekly_aggregates
+from dags import calculate_daily_aggregates, calculate_weekly_aggregates
 
 default_args = {
     "owner": "VK",
